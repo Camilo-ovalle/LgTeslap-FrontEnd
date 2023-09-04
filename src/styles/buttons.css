@@ -1,0 +1,29 @@
+.btnContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #cdfaf6;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 80px;    
+    border-radius: 10px;
+    /* border: dashed red 1px; */
+    background-color: #43A49B;
+    text-decoration: none;
+    transition: 0.5s;
+    box-shadow: 0 0 4px #43A49B;
+}
+
+.btn:hover{
+    background-color: #43A49B;
+    box-shadow: 0 0 10px #43A49B;
+    transition: 0.5s;
+    transform: scale(1.1);
+}

@@ -1,0 +1,104 @@
+/* Estilos para el contenedor principal */
+.mainContainer {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el contenedor interno */
+.container {
+    width: 80%;
+    height: 90;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #D0EBEA;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el encabezado */
+.container h1 {
+    font-size: 4rem;
+    margin-top: 0;
+    background-color: #D0EBEA;
+    text-align: center;
+}
+
+/* Estilos para el párrafo */
+.container .p {
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #D0EBEA;
+
+}
+
+/* Estilos para el contenedor de las tarjetas */
+.container .cardsContainer {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    background-color: #D0EBEA;
+}
+
+
+
+
+/* Media queries para tamaños de pantalla más pequeños */
+@media screen and (max-width: 768px) {
+    .container h1 {
+        font-size: 3rem;
+    }
+
+    .container .p {
+        font-size: 0.9rem;
+    }
+
+    .container .cardsContainer{
+        display: flex;
+        width: 90%;
+        height: 600px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        background-color: #D0EBEA;
+    }
+
+    
+}
+
+/* Media queries para tamaños de pantalla aún más pequeños */
+@media screen and (max-width: 480px) {
+    .container h1 {
+        font-size: 3rem;
+    }
+
+    .container .p {
+        font-size: 0.8rem;
+    }
+
+    .container .cardsContainer{
+        display: flex;
+        width: 90%;
+        height: 600px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        background-color: #D0EBEA;
+    }
+
+    
+}
