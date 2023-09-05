@@ -1,16 +1,17 @@
 import Button from "../components/Buttons";
+import { DEV_DOMAIN } from "../config.js";
 import "../styles/navBar.css";
 
 function navBar() {
   return (
     <>
       <nav className="navBar">
-        <a className="title" href="http://localhost:5173">
+        <a className="title" href="/">
           LgTeslap
         </a>
         <div className="btnContainer">
-          <Button title="Login" href="http://localhost:5173/login" />
-          <Button title="Register" href="http://localhost:5173/register" />
+          <Button title="Login" href={`${DEV_DOMAIN}/login`} />
+          <Button title="Register" href={`${DEV_DOMAIN}/register`} />
         </div>
       </nav>
     </>

@@ -1,4 +1,5 @@
 import Cards from "./components/Cards";
+import { DEV_DOMAIN } from "./config.js";
 import "./styles/home.css";
 
 function Home() {
@@ -18,17 +19,17 @@ function Home() {
             <Cards
               title="Admins"
               body="Use this option if you are an administrator"
-              href="http://localhost:5173/login"
+              href={`${DEV_DOMAIN}/login`}
             />
             <Cards
               title="Company"
               body="Use this option if you represents a company"
-              href="http://localhost:5173/login"
+              href={`${DEV_DOMAIN}/login`}
             />
             <Cards
               title="Users"
               body="Use this option if you are a natural user"
-              href="http://localhost:5173/login"
+              href={`${DEV_DOMAIN}/login`}
             />
           </div>
         </div>
