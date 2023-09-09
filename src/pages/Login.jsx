@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAppContext } from "../context/appContext";
+import { Toaster, toast } from "sonner";
 
 // ?styles
 import "../styles/login.css";
@@ -13,7 +14,10 @@ function Login() {
 
   useEffect(() => {
     if (isAuthenticated) {
-      navigate("/profile");
+      toast.success("Login Successfull");
+      setTimeout(() => {
+        navigate("/profile");
+      }, 3000);
     }
   }, [isAuthenticated]);
 
@@ -25,6 +29,7 @@ function Login() {
             logIn(values);
           })}
         >
+          <Toaster richColors position="top-center" />
           <div className="imgContainer">
             <img src="src/assets/User_Icon.webp" alt="" />
           </div>
