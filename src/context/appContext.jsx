@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState } from "react";
-import { loginRequest, logOutRequest } from "../api/auth.js";
+import { loginRequest, logOutRequest, registerRequest } from "../api/auth.js";
 
 export const AppContext = createContext();
 
@@ -29,6 +29,19 @@ export const AppProvider = ({ children }) => {
     }
   };
 
+  const singIn = async (user) => {
+    try {
+      const res = await registerRequest(user);
+      console.table(res.data);
+      setIsAuthenticated(true);
+      setUser(res.data);
+    } catch (error) {
+      console.log(error);
+      setUser(null);
+      setIsAuthenticated(false);
+    }
+  };
+
   const logOut = () => {
     logOutRequest();
     setUser(null);
@@ -41,6 +54,7 @@ export const AppProvider = ({ children }) => {
         user,
         logIn,
         logOut,
+        singIn,
         isAuthenticated,
       }}
     >

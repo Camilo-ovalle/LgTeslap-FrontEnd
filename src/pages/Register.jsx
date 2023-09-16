@@ -1,18 +1,33 @@
+import { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import { registerRequest } from "../api/auth.js";
+import { useAppContext } from "../context/appContext.jsx";
+import { toast, Toaster } from "sonner";
+import { useNavigate } from "react-router-dom";
 
 import "../styles/register.css";
 function Register() {
   const { handleSubmit, register } = useForm();
+  const { singIn, isAuthenticated } = useAppContext();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      toast.success("User registered Successfully");
+      setTimeout(() => {
+        navigate("/profile");
+      }, 3000);
+    }
+  }, [isAuthenticated]);
+
   return (
     <>
       <div className="formContainer">
         <form
           onSubmit={handleSubmit(async (values) => {
-            const res = await registerRequest(values);
-            console.table(res.data);
+            singIn(values);
           })}
         >
+          <Toaster richColors position="top-center" />
           <div className="imgContainer">
             <img src="src/assets/User_Icon.webp" alt="" />
           </div>
@@ -34,7 +49,7 @@ function Register() {
               placeholder="Password"
               {...register("password", { required: true })}
             />
-            <button type="submit">Login</button>
+            <button type="submit">Register</button>
           </div>
         </form>
       </div>

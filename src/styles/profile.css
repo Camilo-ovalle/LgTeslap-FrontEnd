@@ -114,3 +114,53 @@
     /* border-radius: 10px; */
     text-align: center;
 }
+
+
+/* Agregar estilos específicos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .mainContent {
+        height: auto; /* Cambia la altura a automática en pantallas más pequeñas */
+    }
+
+    .mainProfileContainer {
+        width: 100%; /* Ocupa todo el ancho en pantallas más pequeñas */
+        margin: 0;
+    }
+
+    .mainProfileContainer .userProfile {
+        height: auto; /* Cambia la altura a automática en pantallas más pequeñas */
+        margin: 20px; 
+    }
+
+    .mainProfileContainer .profileData {
+        height: auto; /* Cambia la altura a automática en pantallas más pequeñas */
+        margin: 20px; 
+    }
+
+    .mainProfileContainer .profileData button{
+         /* Cambia la altura a automática en pantallas más pequeñas */
+        margin: 20px; 
+    }
+
+    .dataContainer {
+        width: 100%; /* Ocupa todo el ancho en pantallas más pequeñas */
+        margin: 0;
+    }
+}
+
+/* Agregar estilos específicos para pantallas muy pequeñas */
+@media (max-width: 576px) {
+    .mainProfileContainer {
+        flex-direction: column; /* Cambia la dirección de flex a columna en pantallas muy pequeñas */
+        height: auto; /* Cambia la altura a automática en pantallas muy pequeñas */
+    }
+
+    .userProfile {
+        height: auto; /* Cambia la altura a automática en pantallas muy pequeñas */
+    }
+
+    .mainProfileContainer .profileData h1,
+    .mainProfileContainer .profileData h3 {
+        margin-top: 10px; /* Reduce el margen superior en pantallas muy pequeñas */
+    }
+}
