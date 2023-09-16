@@ -26,7 +26,7 @@ function Profile() {
         <div className="mainProfileContainer">
           <div className="userProfile">
             <div className="img">
-              <img src="src/assets/User_Icon.webp" alt="user profile image" />
+              <img src="/User_Icon.webp" alt="user profile image" />
             </div>
             <h1>{name}</h1>
           </div>

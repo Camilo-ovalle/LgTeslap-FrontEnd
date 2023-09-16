@@ -20,3 +20,28 @@
     justify-content: center;
     align-items: center;
 }
+
+/* Agregar estilos específicos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .navBar {
+        height: auto; /* Cambia la altura a automática en pantallas más pequeñas */
+        flex-direction: column; /* Cambia la dirección de flex a columna en pantallas más pequeñas */
+        text-align: center; /* Centra el texto en pantallas más pequeñas */
+    }
+
+    .navBar .title {
+        padding: 10px 0; /* Reduce el relleno en pantallas más pequeñas */
+        font-size: 36px; /* Reduce el tamaño de fuente en pantallas más pequeñas */
+    }
+
+    .btnContainer {
+        margin-top: 10px; /* Agrega margen superior en pantallas más pequeñas */
+    }
+}
+
+/* Agregar estilos específicos para pantallas muy pequeñas */
+@media (max-width: 576px) {
+    .navBar .title {
+        font-size: 24px; /* Reduce aún más el tamaño de fuente en pantallas muy pequeñas */
+    }
+}
