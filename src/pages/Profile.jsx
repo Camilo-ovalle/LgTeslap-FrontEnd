@@ -59,7 +59,7 @@ function Profile() {
             {users.map((user) => {
               return (
                 <tbody>
-                  <tr key={id}>
+                  <tr key={user.user_id}>
                     <td>{user.user_name}</td>
                     <td>{user.user_email}</td>
                     <td>{user.user_phone}</td>
