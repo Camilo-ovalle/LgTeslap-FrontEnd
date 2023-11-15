@@ -15,7 +15,7 @@ function Register() {
       toast.success("User registered Successfully");
       setTimeout(() => {
         navigate("/profile");
-      }, 3000);
+      }, 1500);
     }
   }, [isAuthenticated]);
 

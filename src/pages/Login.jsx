@@ -17,7 +17,7 @@ function Login() {
       toast.success("Login Successfull");
       setTimeout(() => {
         navigate("/profile");
-      }, 3000);
+      }, 1500);
     }
   }, [isAuthenticated]);
 

@@ -1,8 +1,27 @@
-# React + Vite
+# LgTeslap service manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+In this repository you can find the service manager for the LgTeslap project.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+LgTeslap service manager is a wen app that allows you to manage transporting services for your company, where you will be able to manage your users and services.
+
+The app was created using React js.
+
+please visit the [LgTeslap](https://legteslpa.prodution.up.railway.app/) website to see the app in action.
+
+## Current features
+
+- Login and register system authentication
+- Add new users
+- Consult the list of users
+- Admin and user roles
+
+## Future features
+
+- Add new services
+- Consult the list of services
+- Edit services and users
+- Delete services and users
+- UI redesign
+- Add new roles
