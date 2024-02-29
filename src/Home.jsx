@@ -9,11 +9,10 @@ function Home() {
         <div className="container">
           <h1>Welcome to LgTeslap login manager </h1>
           <p className="p">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-            beatae facilis eveniet maxime eius iste nostrum id accusantium
-            tempora tenetur quibusdam sapiente ipsa consequuntur perferendis
-            ipsam esse ducimus asperiores assumenda itaque nobis magni cum
-            animi! Eligendi delectus ea laudantium eos?
+            "LgTeslap" is a personalized transportation company based in Bogotá
+            that offers a comprehensive range of services for transporting
+            individuals. The company is in need of a tool to assist in managing
+            information related to their clients and services.
           </p>
           <div className="cardsContainer">
             <Cards
